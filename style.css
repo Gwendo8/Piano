@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+}
+body {
+  background-color: antiquewhite;
+  min-height: 200vh;
+  overflow-x: hidden;
+  min-height: 500px;
+}
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  color: red;
+  font-size: 3rem;
+}
+#Touche {
+  list-style-type: none;
+  display: flex;
+  margin-left: 32%;
+  margin-top: 0.5%;
+}
+
+.Do.DoTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+.Re.ReTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+.Mi.MiTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+.Fa.FaTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+.Sol.SolTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+
+.La.LaTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+
+.Si.SiTouche {
+  background-color: rgba(241, 241, 112, 0.445);
+}
+
+
+.Do,
+.Re,
+.Mi,
+.Fa,
+.Sol,
+.La,
+.Si {
+  font-size: 2rem;
+  height: 450px;
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 150px;
+}
+p {
+  padding-top: 120px;
+}
+
+.D.DoToucheNoir {
+ background-color: white;
+ transition: 0.2s;
+}
+.R.ReToucheNoir {
+  background-color: white;
+  transition: 0.2s;
+}
+.F.FaToucheNoir{
+  background-color: white;
+  transition: 0.2s;
+}
+.S.SolToucheNoir{
+  background-color: white;
+  transition: 0.2s;
+}
+.L.LaToucheNoir{
+  background-color: white;
+  transition: 0.2s;
+}
+
+.D {
+  width: 30px;
+  background-color: black;
+  height: 100px;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 86px
+}
+.R {
+  width: 30px;
+  background-color: black;
+  height: 100px;
+  position: absolute;
+  margin-left: 188px;
+  margin-top: 150px;
+  border-radius: 5px;
+}
+
+.F {
+  width: 30px;
+  background-color: black;
+  height: 100px;
+  position: absolute;
+  margin-left: 392px;
+  margin-top: 150px;
+  border-radius: 5px;
+}
+.S {
+  width: 30px;
+  background-color: black;
+  height: 100px;
+  position: absolute;
+  margin-left: 494px;
+  margin-top: 150px;
+  border-radius: 5px;
+}
+.L {
+  width: 30px;
+  background-color: black;
+  height: 100px;
+  position: absolute;
+  margin-left: 597px;
+  margin-top: 150px;
+  border-radius: 5px;
+}
+.un {
+  height: 450px;
+  width: 2px;
+  background-color: black;
+  margin-top: 190px;
+}
+
+.deux {
+  height: 450px;
+  width: 2px;
+  background-color: black;
+  margin-top: 190px;
+}
+.trois {
+  height: 490px;
+  width: 2px;
+  background-color: black;
+  margin-top: 150px;
+}
+.quatre {
+  height: 450px;
+  width: 2px;
+  background-color: black;
+  margin-top: 190px;
+}
+.cinq {
+  height: 450px;
+  width: 2px;
+  background-color: black;
+  margin-top: 190px;
+}
+.six {
+  height: 450px;
+  width: 2px;
+  background-color: black;
+  margin-top: 190px;
+}
+.sept {
+  height: 490px;
+  width: 2px;
+  background-color: black;
+  margin-top: 150px;
+}
+#vertibas {
+  height: 2px;
+  width: 714px;
+  background-color: black;
+  margin-top: 640px;
+  position: absolute;
+}
+#vertihaut {
+  height: 2px;
+  width: 714px;
+  background-color: black;
+  position: absolute;
+  margin-top: 150px;
+}
+#horiz {
+  height: 490px;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  margin-top: 150px;
+}
+h3 {
+  margin-top: 300px;
+}
+
+
+.Choix {
+  /* permet de mettre sur la même ligne les liste  */
+  display: flex;
+  /* permet de faire des espaces entres les boites  */
+  justify-content: space-around;
+  margin-top: 100px;
+}
+#Choix1 {
+  height: 210px;
+  width: 240px;
+  margin-top: 15%;
+  margin-left: 5%;
+  position: absolute;
+  margin-right: 1000px;
+  background-color: aqua;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+#Choix2 {
+  height: 210px;
+  width: 240px;
+  margin-top: 15%;
+  position: absolute;
+  margin-left: 75%;
+  background-color: aqua;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+#C {
+  margin-left: 5%;
+  position: absolute;
+}
+
+#c1 {
+  padding: 17px;
+  margin: 0;
+}
+#c2 {
+  padding: 17px;
+  margin: 0;
+}
+
+#Liste{
+  /* permet de mettre sur la même ligne les liste  */
+  display: flex;
+  /* permet de faire des espaces entres les boites  */
+  justify-content: space-around;
+  position: absolute
+}
+.docToucheBlanche{
+  visibility: hidden;
+  margin-left: 20px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.docToucheNoir{
+  visibility: hidden;
+  margin-left: 50px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.showdoc{
+  visibility: visible;
+}
+
+ /* Effet tu titre  */
+.effetneon {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+  animation: lumiere 1s infinite linear;
+}
+
+@keyframes lumiere {
+  0%{
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+  }
+ 50%{
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 32px rgb(230, 18, 124),
+      0 0 87px rgb(230, 18, 124),
+      0 0 120px rgb(230, 18, 124);
+  }
+}
+.effetneon span {
+  font-size: 6rem;
+}
+
+.btn{
+  background-color: rgb(110, 104, 104);
+  height:50px;
+  margin-top: 100px;
+  border-color: rgba(255, 0, 0, 0);
+  border-width: 4px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+}
+
+#Photo{
+  width: 600px;
+  height: 400px;
+  margin-top: 10%;
+  border-radius: 10px;
+  border: 10px solid;
+}
+.Retour{
+  background-color: rgb(110, 104, 104);
+  height:50px;
+  margin-top: -44%;
+  border-color: rgba(255, 0, 0, 0);
+  border-width: 4px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
+.Retourr{
+  background-color: rgb(110, 104, 104);
+  height:50px;
+  margin-top: -36%;
+  border-color: rgba(255, 0, 0, 0);
+  border-width: 4px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
