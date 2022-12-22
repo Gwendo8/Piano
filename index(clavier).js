@@ -1,20 +1,18 @@
 const key = document.querySelector("#key");
 
-const cestDo = document.querySelector(".Do");
-const cestRe = document.querySelector(".Re");
-const cestMi = document.querySelector(".Mi");
-const cestFa = document.querySelector(".Fa");
-const cestSol = document.querySelector(".Sol");
-const cestLa = document.querySelector(".La");
-const cestSi = document.querySelector(".Si");
+const cestDo = document.querySelector("#do");
+const cestRe = document.querySelector("#re");
+const cestMi = document.querySelector("#mi");
+const cestFa = document.querySelector("#fa");
+const cestSol = document.querySelector("#sol");
+const cestLa = document.querySelector("#la");
+const cestSi = document.querySelector("#si");
 
-const cestDoNoir = document.querySelector(".D");
-const cestReNoir = document.querySelector(".R");
-const cestFaNoir = document.querySelector(".F");
-const cestSolNoir = document.querySelector(".S");
-const cestLaNoir = document.querySelector(".L");
-
-const retourC = document.querySelector(".Retour");
+const cestDoNoir = document.querySelector("#doDiese");
+const cestReNoir = document.querySelector("#reDiese");
+const cestFaNoir = document.querySelector("#faDiese");
+const cestSolNoir = document.querySelector("#solDiese");
+const cestLaNoir = document.querySelector("#laDiese");
 
 const sonne = (key) => {
   const audio = new Audio();
@@ -25,76 +23,76 @@ const sonne = (key) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "d") {
     sonne(e.key);
-    cestDo.classList.add("DoTouche");
+    cestDo.classList.add("Appuie");
   } else if (e.key === "f") {
     sonne(e.key);
-    cestRe.classList.add("ReTouche");
+    cestRe.classList.add("Appuie");
   } else if (e.key === "g") {
     sonne(e.key);
-    cestMi.classList.add("MiTouche");
+    cestMi.classList.add("Appuie");
   } else if (e.key === "h") {
     sonne(e.key);
-    cestFa.classList.add("FaTouche");
+    cestFa.classList.add("Appuie");
   } else if (e.key === "j") {
     sonne(e.key);
-    cestSol.classList.add("SolTouche");
+    cestSol.classList.add("Appuie");
   } else if (e.key === "k") {
     sonne(e.key);
-    cestLa.classList.add("LaTouche");
+    cestLa.classList.add("Appuie");
   } else if (e.key === "l") {
     sonne(e.key);
-    cestSi.classList.add("SiTouche");
+    cestSi.classList.add("Appuie");
   }
 });
 
 document.addEventListener("keyup", (e) => {
   if (e.key === "d") {
-    cestDo.classList.remove("DoTouche");
+    cestDo.classList.remove("Appuie");
   } else if (e.key === "f") {
-    cestRe.classList.remove("ReTouche");
+    cestRe.classList.remove("Appuie");
   } else if (e.key === "g") {
-    cestMi.classList.remove("MiTouche");
+    cestMi.classList.remove("Appuie");
   } else if (e.key === "h") {
-    cestFa.classList.remove("FaTouche");
+    cestFa.classList.remove("Appuie");
   } else if (e.key === "j") {
-    cestSol.classList.remove("SolTouche");
+    cestSol.classList.remove("Appuie");
   } else if (e.key === "k") {
-    cestLa.classList.remove("LaTouche");
+    cestLa.classList.remove("Appuie");
   } else if (e.key === "l") {
-    cestSi.classList.remove("SiTouche");
+    cestSi.classList.remove("Appuie");
   }
 });
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "r") {
     sonne(e.key);
-    cestDoNoir.classList.add("DoToucheNoir");
+    cestDoNoir.classList.add("Appuie");
   } else if (e.key === "t") {
     sonne(e.key);
-    cestReNoir.classList.add("ReToucheNoir");
+    cestReNoir.classList.add("Appuie");
   } else if (e.key === "u") {
     sonne(e.key);
-    cestFaNoir.classList.add("FaToucheNoir");
+    cestFaNoir.classList.add("Appuie");
   } else if (e.key === "i") {
     sonne(e.key);
-    cestSolNoir.classList.add("SolToucheNoir");
+    cestSolNoir.classList.add("Appuie");
   } else if (e.key === "o") {
     sonne(e.key);
-    cestLaNoir.classList.add("LaToucheNoir");
+    cestLaNoir.classList.add("Appuie");
   }
 });
 
 document.addEventListener("keyup", (e) => {
   if (e.key === "r") {
-    cestDoNoir.classList.remove("DoToucheNoir");
+    cestDoNoir.classList.remove("Appuie");
   } else if (e.key === "t") {
-    cestReNoir.classList.remove("ReToucheNoir");
+    cestReNoir.classList.remove("Appuie");
   } else if (e.key === "u") {
-    cestFaNoir.classList.remove("FaToucheNoir");
+    cestFaNoir.classList.remove("Appuie");
   } else if (e.key === "i") {
-    cestSolNoir.classList.remove("SolToucheNoir");
+    cestSolNoir.classList.remove("Appuie");
   } else if (e.key === "o") {
-    cestLaNoir.classList.remove("LaToucheNoir");
+    cestLaNoir.classList.remove("Appuie");
   }
 });
 
@@ -106,9 +104,4 @@ documentation.addEventListener("click", (e) => {
   docAfficherBlanche.classList.toggle("showdoc");
   docAfficherNoir.classList.toggle("showdoc");
   console.log("yes");
-});
-
-retourC.addEventListener("click", (e) => {
-  console.log("Yes");
-  window.open("index.html");
 });
