@@ -102,10 +102,9 @@ h1 {
 
 #Liste {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 20px 0;
+  margin-left: 35px;
 }
 
 .docToucheBlanche,
@@ -160,7 +159,7 @@ h1 {
   border: none;
   border-radius: 5px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 0 20px;
   margin-top: 20px;
