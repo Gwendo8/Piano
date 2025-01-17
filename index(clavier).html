@@ -5,56 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Piano</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <div class="effetneon">
-    <h1>Piano avec le clavier</h1>
-</div>
-      <span id="key"></span>
-    
-    <button class="btn" id="docc">Documentation pour les touches a utiliser</button> 
-    <ul id="Liste">
-        <li class="docToucheBlanche">
-            Do = Touche D <br>
-            Re = Touche F <br>
-            Mi = Touche G <br>
-            Fa = Touche H <br>
-            Sol = Touche J <br>
-            La = Touche K <br>
-            Si = Touche L</li>
+    <div class="content">
+        <h1>Jouer au panio avec le clavier</h1>
+        <span id="key"></span>
+        
+        <button class="btn" id="docc">Documentation pour les touches à utiliser</button> 
+        
+        <ul id="Liste" class="docList">
+            <li class="docToucheBlanche">
+                Do = Touche D <br>
+                Re = Touche F <br>
+                Mi = Touche G <br>
+                Fa = Touche H <br>
+                Sol = Touche J <br>
+                La = Touche K <br>
+                Si = Touche L
+            </li>
             <li class="docToucheNoir">
-            DoNoir = Touche R <br>
-            ReNoir = Touche T <br>
-            FaNoir = Touche U <br>
-            SolNoir = Touche I <br>
-            LaNoir = Touche O <br>
+                DoNoir = Touche R <br>
+                ReNoir = Touche T <br>
+                FaNoir = Touche U <br>
+                SolNoir = Touche I <br>
+                LaNoir = Touche O
             </li>
         </ul>
-        
-            <div id="container">
-                <div id="piano">
-                    <div class="touche blanche" id="do"></div>
-                    <div class="touche noire" id="doDiese" style="left: 89px"></div>
-                    <div class="touche blanche" id="re"></div>
-                    <div class="touche noire" id="reDiese" style="left: 193px"></div>
-                    <div class="touche blanche" id="mi"></div>
-                    <div class="touche blanche" id="fa"></div>
-                    <div class="touche noire" id="faDiese" style="left: 401px"></div>
-                    <div class="touche blanche" id="sol"></div>
-                    <div class="touche noire" id="solDiese" style="left: 505px"></div>
-                    <div class="touche blanche" id="la"></div>
-                    <div class="touche noire" id="laDiese" style="left: 609px"></div>
-                    <div class="touche blanche" id="si"></div>
-                </div>
-            </div>
-            
-        </body>
 
-</ul>
-</div>
+        <div id="container">
+            <div id="piano">
+                <div class="touche blanche" id="do"></div>
+                <div class="touche noire" id="doDiese" style="left: 89px"></div>
+                <div class="touche blanche" id="re"></div>
+                <div class="touche noire" id="reDiese" style="left: 193px"></div>
+                <div class="touche blanche" id="mi"></div>
+                <div class="touche blanche" id="fa"></div>
+                <div class="touche noire" id="faDiese" style="left: 401px"></div>
+                <div class="touche blanche" id="sol"></div>
+                <div class="touche noire" id="solDiese" style="left: 505px"></div>
+                <div class="touche blanche" id="la"></div>
+                <div class="touche noire" id="laDiese" style="left: 609px"></div>
+                <div class="touche blanche" id="si"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="index(clavier).js"></script>
 </body>

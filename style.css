@@ -1,75 +1,42 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
   cursor: crosshair;
 }
+
 body {
-  background-color: antiquewhite;
-  
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
 }
-  #container {
-    display: flex;
-    justify-content: center;
+
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
 }
 
 #piano {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    text-align: center;
-}
-
-.touche {
-    height: 450px;
-    width: 100px;
-    border: 2px solid black;
-  box-shadow: 0px 10px 5px -1px;
-  background-color: white;
-}
-
-.noire {
-    background-color: black;
-    height: 200px;
-    width: 25px;
-    position: absolute;
-}
-
-#do.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#re.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#mi.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#fa.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#sol.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#la.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#si.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-
-#doDiese.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#reDiese.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#faDiese.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#solDiese.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
-}
-#laDiese.Appuie{
-  box-shadow: 0px 10px 5px -10px ;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
 }
 
 #pianoS {
@@ -79,130 +46,128 @@ body {
   text-align: center;
   margin-top: 13%;
 }
-.Choix {
-  /* permet de mettre sur la même ligne les liste  */
+
+.touche {
+  height: 450px;
+  width: 100px;
+  border: 2px solid black;
+  box-shadow: 0px 10px 5px -1px;
+  background-color: white;
+}
+
+.noire {
+  background-color: black;
+  height: 200px;
+  width: 25px;
+  position: absolute;
+}
+
+#do.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#re.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#mi.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#fa.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#sol.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#la.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#si.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+
+#doDiese.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#reDiese.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#faDiese.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#solDiese.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+#laDiese.Appuie {
+  box-shadow: 0px 10px 5px -10px;
+}
+
+#Liste {
   display: flex;
-  /* permet de faire des espaces entres les boites  */
-  justify-content: space-around;
-  margin-top: 100px;
-}
-#Choix1 {
-  height: 210px;
-  width: 240px;
-  margin-top: 15%;
-  margin-left: 5%;
-  position: absolute;
-  margin-right: 1000px;
-  background-color: aqua;
-  border: 2px solid;
-  border-radius: 10px;
-  text-align: center;
-  transform: translateX(-50%);
-}
-#Choix2 {
-  height: 210px;
-  width: 240px;
-  margin-top: 15%;
-  position: absolute;
-  margin-left: 75%;
-  background-color: aqua;
-  border: 2px solid;
-  border-radius: 10px;
-  text-align: center;
-  transform: translateX(-50%);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
 }
 
-#C {
-  margin-left: 5%;
-  position: absolute;
-}
-
-#c1 {
-  padding: 17px;
+.docToucheBlanche,
+.docToucheNoir {
+  visibility: hidden;
+  list-style-type: none;
   margin: 0;
-}
-#c2 {
-  padding: 17px;
-  margin: 0;
+  padding: 0;
+  transition: visibility 0.3s ease, margin 0.3s ease;
 }
 
-#Liste{
-  /* permet de mettre sur la même ligne les liste  */
-  display: flex;
-  /* permet de faire des espaces entres les boites  */
-  justify-content: space-around;
+.docToucheBlanche {
+  margin-left: 0;
+}
+
+.docToucheNoir {
+  margin-right: 0;
   position: relative;
 }
-.docToucheBlanche{
-  visibility: hidden;
-  margin-left: -1700px;
-  list-style-type: none;
-}
 
-.docToucheNoir{
-  visibility: hidden;
-  margin-right: 1300px;
-  list-style-type: none;
-  position: absolute;
-}
-
-.showdoc{
+.showdoc {
   visibility: visible;
 }
 
- /* Effet tu titre  */
-.effetneon {
-  font-size: 2rem;
+#key {
+  font-size: 1.2rem;
+  color: #888;
   text-align: center;
-  color: #fff;
-  text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 42px rgb(230, 18, 124),
-      0 0 77px rgb(230, 18, 124),
-      0 0 100px rgb(230, 18, 124);
-  animation: lumiere 1s infinite linear;
-  position: relative;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes lumiere {
-  0%{
-      text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 42px rgb(230, 18, 124),
-      0 0 77px rgb(230, 18, 124),
-      0 0 100px rgb(230, 18, 124);
-  }
- 50%{
-      text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 32px rgb(230, 18, 124),
-      0 0 87px rgb(230, 18, 124),
-      0 0 120px rgb(230, 18, 124);
-  }
-}
-.effetneon span {
-  font-size: 6rem;
+#Liste li {
+  margin: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-.btn{
-  background-color: rgb(110, 104, 104);
-  height:50px;
-  margin-top: 100px;
-  border-color: rgba(255, 0, 0, 0);
-  border-width: 4px;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 20px;
+#Liste li:hover {
+  transform: scale(1.05);
+  background-color: #e8e8e8;
+}
+
+.btn {
+  background-color: #4a90e2;
+  margin-left: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
   color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#Photo{
-  width: 600px;
-  height: 400px;
-  margin-top: 10%;
-  border-radius: 10px;
-  border: 10px solid;
+.btn:hover {
+  background-color: #357ab7;
+  transform: scale(1.05);
 }
